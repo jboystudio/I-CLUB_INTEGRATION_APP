@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.signin-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: #070707;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: blue;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 10px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signin-btn {
+    padding: 10px 20px;
+    background-color: #e46612;
+    color: #070707;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signin-btn:hover {
+    background-color: #0056b3;
+}

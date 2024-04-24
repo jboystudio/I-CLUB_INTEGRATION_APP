@@ -1,0 +1,169 @@
+*{
+    padding: 0%;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #D8E2E9;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-image: url(mountain.jpg); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-size: cover; /* This property ensures that the background image covers the entire background */
+    background-repeat: no-repeat; 
+
+}
+
+.menu-bar{
+    background: rgba(9, 1, 80, 0.979);
+    text-align: center;
+    position: fixed; /* Make the menu-bar fixed */
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+
+}
+
+.menu-bar li{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+
+}
+a{
+    text-decoration: none;
+    color: #ccc;
+    font-size: 20px;
+}
+.active{
+    text-decoration-line: underline;
+    border-radius: 3px;
+    
+
+}
+
+li a:hover{
+    background: #40e915;
+    border-radius: 3px;
+    padding: 10px;
+    color: blue;
+    border-radius: 3px;
+    padding: 10px;
+    
+}
+.sub-menu-1{
+    display: none;
+}
+
+.menu-bar li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: rgb(1, 19, 54);
+    margin-top: 45px;
+    margin-left: -85px;
+}
+
+.menu-bar li:hover .sub-menu-1 li{
+    display: block;
+    width: 170px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+
+}
+
+
+.card-container {
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Allow wrapping to new rows */
+    gap: 20px; /* Add space between cards */
+    justify-content: center; /* Center the cards horizontally */
+    padding-top: 60px; /* Compensate for the fixed menu-bar */
+    margin-top: 50px;
+    
+}
+.card-row {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Evenly distribute cards */
+    margin-bottom: 20px; /* Space between rows */
+}
+
+.card {
+    width: 300px; /* Set your desired width */
+    height: 400px; /* Set a fixed height for all cards */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-left: 20px;
+    background-color: #f5f5dcbd;
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+}
+.card a:hover{
+    background: none;
+}
+
+.card:hover {
+    transform: scale(1.0.9) translateZ(10px); /* Scale up and move frontwards */
+    box-shadow: 0 12px 20px rgba(12, 12, 12, 0.7); /* Light blue shadow */
+    cursor: pointer; /* Change cursor to indicate interactivity */
+}
+h3{
+    color: rgb(3, 27, 77);
+}
+h3 a{
+    color: rgb(3, 27, 77);
+    
+}
+h3 a:hover{
+    background: none;
+
+}
+
+.card img {
+    width: 100%;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+    height: 150px; /* Set your desired height */
+    
+}
+
+.card video {
+    width: 100%;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+    height: 150px; /* Set your desired height */
+    
+}
+
+.card .description {
+    margin: 20px 0;
+    color: #000000;
+}
+p{
+    margin-top: 20px;
+    color: #000000;
+}
+.card .read-more a{
+    text-align: center;
+    color: rgb(51, 145, 221);
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+}
+.hidden-content {
+    display: none; /* Initially hide hidden content */
+    overflow-y: auto; /* Add vertical scrollbar */
+    max-height: 100px;
+}
